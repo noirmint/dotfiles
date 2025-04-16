@@ -1,0 +1,14 @@
+theme = "Kanagawa Dragon"
+background-opacity = 0.68
+background-blur-radius = 30
+
+font-family = ComicShannsMono Nerd Font
+font-size = 16
+
+macos-titlebar-style = hidden
+
+window-decoration = true
+window-padding-x = 10
+window-padding-y = 10
+
+copy-on-select = clipboard

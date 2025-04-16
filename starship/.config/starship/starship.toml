@@ -1,0 +1,51 @@
+format = """
+[](#658594)$directory[█](fg:#658594 bg:#8EA4A2)\
+$git_branch$git_commit[█](fg:#8EA4A2 bg:#76946A)\
+$git_metrics[█](fg:#76946A bg:#b7d0ae)\
+$git_status[█](fg:#b7d0ae)\
+$fill\
+$time
+$character\
+"""
+right_format="$python"
+
+[directory]
+style = "bold fg:#0D0C0C bg:#658594"
+format = "[$path]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[git_branch]
+symbol = "  "
+style = "bold fg:#0D0C0C bg:#8EA4A2"
+format = "[$symbol$branch(:$remote_branch)]($style)"
+
+[git_commit]
+style = "fg:#0D0C0C bg:#8EA4A2"
+format = "[ $hash$tag]($style)"
+
+[git_metrics]
+added_style = "bold fg:#0D0C0C bg:#76946A"
+deleted_style = "bold fg:#0D0C0C bg:#76946A"
+format = "([ +$added]($added_style))([ -$deleted]($deleted_style))"
+disabled = false
+
+[git_status]
+style = "bold fg:#0D0C0C bg:#b7d0ae"
+format = '([ \[$all_status$ahead_behind\]]($style))'
+
+[character]
+success_symbol = "[❯❯](fg:#658594)"  
+error_symbol = "[❯❯](fg:#C4746E)"  
+
+[time]
+format = "[█](fg:#C4B28A)[$time](bold fg:#0D0C0C bg:#C4B28A)[█](fg:#C4B28A)"
+disabled = false
+
+[fill]
+symbol = "="
+style = "fg:#C5C9C5"
+
+[python]
+symbol = ""
+style = "bold fg:#C5C9C5"

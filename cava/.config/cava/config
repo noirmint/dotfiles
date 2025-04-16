@@ -1,0 +1,19 @@
+[general]
+
+framerate = 120
+
+bars = 0 # auto
+bar_width = 2
+bar_spacing = 1
+
+[color]
+
+gradient = 1
+gradient_count = 2
+gradient_color_1 = '#658594'
+gradient_color_2 = '#DCD7BA'
+
+[smoothing]
+
+# controls bar gravity
+noise_reduction = 77
